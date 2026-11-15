@@ -1,0 +1,69 @@
+# ═══════════════════════════════════════════════════════════════
+# JARVIS — Python Dependencies
+# ═══════════════════════════════════════════════════════════════
+# Install: pip install -r requirements.txt
+#
+# MINIMUM required (Tier 1 - text mode only):
+#   pip install requests pyttsx3
+#
+# RECOMMENDED (Tier 2 - full voice assistant):
+#   pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════════
+
+# ── Core ──────────────────────────────────────────────────────
+requests>=2.31.0            # HTTP (Ollama, weather, search)
+numpy>=1.24.0               # Audio processing
+
+# ── Audio I/O ─────────────────────────────────────────────────
+pyaudio>=0.2.14             # Microphone input
+# macOS: brew install portaudio && pip install pyaudio
+# Windows: pip install pipwin && pipwin install pyaudio
+
+# ── Wake Word ─────────────────────────────────────────────────
+openwakeword>=0.6.0         # Free, open-source wake word detection
+# ALTERNATIVE: pvporcupine>=3.0.0 (needs free Picovoice API key)
+
+# ── Speech-to-Text ────────────────────────────────────────────
+faster-whisper>=1.0.0       # Fast Whisper inference (recommended)
+# ALTERNATIVE: vosk>=0.3.45 (fully offline, less accurate)
+
+# ── Text-to-Speech ────────────────────────────────────────────
+pyttsx3>=2.90               # System TTS voices (lightweight)
+# ALTERNATIVE: TTS>=0.22.0  # Coqui TTS (higher quality, larger)
+
+# ── LLM ───────────────────────────────────────────────────────
+# No Python package needed for Ollama — it runs as a separate process
+# Install Ollama from: https://ollama.ai
+# Then: ollama pull mistral
+
+# ── PDF ───────────────────────────────────────────────────────
+pymupdf>=1.23.0             # Fast PDF text extraction (PyMuPDF)
+# pip name is "pymupdf", import name is "fitz"
+
+# ── Web Search ────────────────────────────────────────────────
+ddgs>=9.0.0                 # Free DDG search, no API key needed (formerly duckduckgo-search)
+
+# ── System ────────────────────────────────────────────────────
+psutil>=5.9.0               # Battery, memory, CPU info
+
+# ── Windows volume control ─────────────────────────────────────
+pycaw>=20230407              # Windows audio control (system_commands.py)
+comtypes>=1.2.0              # Required by pycaw on Windows
+
+# ── Windows brightness control ─────────────────────────────────
+wmi>=1.5.1                    # Brightness control via WMI (system_commands.py, Windows only)
+
+# ── Windows screenshot ──────────────────────────────────────────
+pillow>=10.0.0                # Screenshot capture (system_commands.py, Windows only)
+
+# ── Optional: Better audio resampling ─────────────────────────
+# soundfile>=0.12.1
+# resampy>=0.4.2
+
+# ── Optional: Coqui TTS (high quality voice) ──────────────────
+# TTS>=0.22.0
+# Note: requires ~2GB download for models
+
+# ── Optional: Porcupine wake word (alternative) ───────────────
+# pvporcupine>=3.0.0
+# Requires free API key from console.picovoice.ai

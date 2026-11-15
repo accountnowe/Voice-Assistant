@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# JARVIS runtime data (personal memory + logs)
+data/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets
+.env
+.env.local
+*.env
+config_local.py
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Models and large files (downloaded automatically)
+*.bin
+*.gguf
+*.onnx
+*.pt
+*.pth
+vosk-model/
+
+# Audio temp files
+*.wav
+*.mp3
+*.aiff
+temp_audio*
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
