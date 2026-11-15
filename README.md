@@ -173,11 +173,7 @@ Anyone can chain a few APIs together. These were the problems that took real deb
 
 ---
 
-## 🙏 Credits & License
 
-JARVIS builds on the open-source **jarvis-ai-assistant** foundation by [Mann473](https://github.com/Mann473/jarvis-ai-assistant), released under the MIT License. This version adds substantial bug fixes, new action modules (YouTube, Google, file/folder search, system power controls, volume/brightness control), a custom GUI with animated waveform, and Windows-specific hardening.
-
-Released under the **MIT License**. See `LICENSE`.
 
 ---
 
